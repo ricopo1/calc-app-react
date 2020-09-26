@@ -4,7 +4,7 @@ import './Button.css'
 
 const Button = ({type, text, clickHandler}) => (
     <button className={type} onClick={() => clickHandler(text)}>
-        <span>{text}</span>
+        {type === "button-delete"?<i className="fa fa-trash-o"></i>:<span>{text}</span>}
     </button>
 )
 
