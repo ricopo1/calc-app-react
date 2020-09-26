@@ -6,7 +6,10 @@ import './History.css'
 
 const History = ({history, onClickDeleteHistory}) => (
     <section className="history">
-        <p>{history}</p>
+        <div className="content-history">
+            <p>History: </p>
+            <p>{history}</p>
+        </div>
         <Button text="delete" type="button-delete" clickHandler={onClickDeleteHistory}/>
     </section>
 )
